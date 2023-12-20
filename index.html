@@ -16,7 +16,26 @@
             <li><a href="recipes/grilledcheese.html">Grilled Cheese</a></li>
             <li><a href="recipes/pastatomato.html">Pastatomato</a></li>
         </ul>
-    </div>      
+    </div>
+    <script>
+        // Function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Apply random colors to list items
+        const listItems = document.getElementById('randomizedList').getElementsByTagName('li');
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].style.color = getRandomColor();
+        }
+    </script>
+    
+
     <a href="#header">Return to Top</a>
 </body>
 </html>

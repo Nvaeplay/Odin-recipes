@@ -10,6 +10,7 @@ body {
     color: brown;
 }
 
-a {
-    color: burlywood;
-}
+ul li {
+    /* Set a default color */
+    color: black;
+  }

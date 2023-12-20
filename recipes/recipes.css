@@ -7,41 +7,7 @@ body {
 
 
 
-
-/* External CSS for styling the rainbow-colored list items */
-ul li:nth-child(1) {
-  color: red; /* First item color */
-}
-
-ul li:nth-child(2) {
-  color: orange; /* Second item color */
-}
-
-ul li:nth-child(3) {
-  color: yellow; /* Third item color */
-}
-
-ul li:nth-child(4) {
-  color: green; /* Fourth item color */
-}
-
-ul li:nth-child(5) {
-  color: blue; /* Fifth item color */
-}
-
-ul li:nth-child(6) {
-  color: indigo; /* Sixth item color */
-}
-
-ul li:nth-child(7) {
-  color: violet; /* Seventh item color */
-}
-
-/* Repeat colors for additional list items */
-ul li:nth-child(n + 8):nth-child(odd) {
-  color: red; /* Odd-indexed items after the seventh */
-}
-
-ul li:nth-child(n + 8):nth-child(even) {
-  color: orange; /* Even-indexed items after the seventh */
+ul li {
+  /* Set a default color */
+  color: black;
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Pics</title>
+    <style>
+        /* Add some styling to hide/show images */
+        .ingredient-images {
+            display: none;
+        }
+
+        /* Style the displayed image */
+        #displayed-image {
+            max-width: 100%;
+            max-height: 400px; /* Set a maximum height for the displayed image */
+        }
+    </style>
+</head>
+<body>
+
+    <ul id="randomizedList">
+        <li><a href="#" onclick="showImage('strawberries')">Fresh Strawberries, hulled and sliced</a></li>
+        <li><a href="#" onclick="showImage('blueberries')">Fresh Blueberries</a></li>
+        <li><a href="#" onclick="showImage('pineapple')">Fresh Pineapple, diced</a></li>
+        <li><a href="#" onclick="showImage('grapes')">Grapes, halved</a></li>
+        <li><a href="#" onclick="showImage('kiwi')">Kiwi, peeled and sliced</a></li>
+        <li><a href="#" onclick="showImage('oranges')">Oranges, peeled and segmented</a></li>
+        <li><a href="#" onclick="showImage('honey')">Honey (optional, for drizzling)</a></li>
+        <li><a href="#" onclick="showImage('mint')">Mint leaves (optional, for garnish)</a></li>
+    </ul>
+
+    <div id="displayed-image-container">
+        <img id="displayed-image" src="" alt="Displayed Ingredient">
+    </div>
+
+    <script>
+        function showImage(ingredient) {
+            // Get the image source for the selected ingredient
+            var imagePath = "path/to/your/images/" + ingredient + ".jpg";
+
+            // Display the selected image
+            document.getElementById('displayed-image').src = imagePath;
+            document.getElementById('displayed-image-container').style.display = 'block';
+
+            // Optionally, you can add code here to hide the image when clicked again.
+        }
+    </script>
+
+</body>
+</html>
